@@ -13,13 +13,24 @@ int main()
 
     cout << "Entering 'q' or 'stop' will stop." << endl;
 
-    getline(cin, line);
-    while (line != "q" || line != "stop") {
-        calc = Calculator();
-        p_input = line;
-        res = calc.calculate(p_input);
-        cout << line << " " << res << endl;
+    while (true) {
+        cout << "> ";
         getline(cin, line);
+
+        if (line == "clear") {
+            system("clear");
+            continue;
+        }
+        else if (line == "q" || line == "stop") {
+            break;
+        }
+        else {
+            calc = Calculator();
+            p_input = line;
+            res = calc.calculate(p_input);
+            cout << line << " " << res << endl;
+        }
     }
+
     return 0;
 }
