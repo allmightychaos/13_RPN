@@ -1,0 +1,33 @@
+# Compiled Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Compiled Binary files
+*.bin
+*.out
+
+# Build directories
+build/
+Debug/
+Release/
+
+# IDE files
+.vscode/
+*.vscode/
+*.code-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+*.swp
