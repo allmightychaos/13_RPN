@@ -17,7 +17,8 @@ git clone https://github.com/allmightychaos/13_RPN.git
 
 ## Usage
 
-After compiling the files, run ```./rpn``` to start the program. You can then enter a mathematical expression in RPN and press enter to get the result. The program will keep running until you enter ```q``` or ```stop``` to quit.
+After compiling the files, run ```./rpn``` to start the program. You can then enter a mathematical expression in RPN and press enter to get the result. The program will keep running until you enter ```q``` or ```stop``` to quit. <br>
+If you wnat to clear the terminal / console, you can enter ```clear``` to do so.
 
 The program currently supports the following operators:
 
