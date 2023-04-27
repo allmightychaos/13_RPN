@@ -1,4 +1,5 @@
 #include <stdexcept>
+#include <cmath>
 
 #include "calculator.h"
 #include "node.h"
@@ -48,7 +49,7 @@ double Calculator::calculate(std::string input) {
             part = input.substr(0, pos);
             input.erase(0, pos+1);
         }
-        if (part.length() == 1 && (part[0] == '*' || part[0] == '+' || part[0] == '-')) {
+        if (part.length() == 1 && (part[0] == '*' || part[0] == '+' || part[0] == '-' || part[0] == '/')) {
             double op2 = pop();
             double op1 = pop();
             switch (part[0]) {
@@ -60,6 +61,12 @@ double Calculator::calculate(std::string input) {
                     break;
                 case '-':
                     push(op1 - op2);
+                    break;
+                case '/': // handle division operator
+                    if (op2 == 0) {
+                        throw std::logic_error("Division by zero!");
+                    }
+                    push(op1 / op2);
                     break;
             }
         } else {
