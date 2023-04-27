@@ -11,7 +11,7 @@ To run this program, you need to have a C++ compiler installed on your system.
 To install this program, you can clone the repository using the following command:
 
 ```bash
-git clone https://github.com/allmightychaos/13_UPN.git
+git clone https://github.com/allmightychaos/13_RPN.git
 ```
 
 
