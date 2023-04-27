@@ -32,5 +32,5 @@ If you find any issues with this program or would like to contribute to its deve
 
 ## License
 
-This program is licensed under the MIT License. See the [LICENSE](LICENCE) file for more information.
+This program is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
